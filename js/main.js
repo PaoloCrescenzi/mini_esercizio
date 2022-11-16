@@ -1,19 +1,10 @@
-let txtList=["piPPo","paPERIno","pLUTO"];
+const nameLista = ["pippo", "PLUTO", "Paperino"]
 
+const nuovaLista = nameLista.map(function (el){
+    let nuovaStringa = el.toLowerCase().split();
 
-txtList=txtList.map(function(i){
-     let newTxt;
-     newTxt=i.toLowerCase();
-     
-     return upper(newTxt);
+    nuovaStringa[0] = nuovaStringa[0].toUpperCase();
+
+    return nuovaStringa.join("")
 })
-
-console.log(txtList);
-
-function upper(txt){
-    let newtxt;
-    newtxt=txt[0].toUpperCase()+txt.slice(1);
-    return newtxt;
-}
-
 
